@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h4>form</h4>
+    <p>Hello testing color</p>
+
+    <form action="{{url_for('form') }}" method="post">
+        <input type="text" name="math" placeholder="Enter your name." required="required" />
+        <input type="text" name="science" placeholder="Email" required="required" />
+        <input type="text" name="history" placeholder="Password" required="required" />
+
+        <button type="submit" >Submit</button>
+    </form>
+
+<br>
+The final score is {{ score }}
+<br>
+</body>
+</html>
